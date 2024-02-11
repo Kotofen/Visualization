@@ -5,6 +5,8 @@ from  ChernoffFace import *
 
 
 dfp = pd.read_csv("Puromycin.csv")
+print(dfp.head())
+print(dfp.shape)
 
 dfp2 = dfp
 dfp2["state"] = dfp2["state"].replace("treated", 1)
